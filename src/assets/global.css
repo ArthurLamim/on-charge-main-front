@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html,
+body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F2F2F2;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #F2F2F2;  /* creates padding around scroll thumb */
+}
+
+.fadeIn {
+    animation: 0.2s fadeIn forwards;
+}
+
+.fadeOut {
+    animation: 0.2s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(-20px, 0);
+        opacity: 0;
+    }
+}
